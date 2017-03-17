@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/seek-style.css" />
+    </head>
+    <body>
+        <div id="header">
+            <span class="web-name">Help!</span>
+            <a class="user-login" href="login.html">&nbsp登陆&nbsp</a>
+        </div>
+        <div id="content">
+            <p class="seek-title"><i class="bor"></i>&nbsp找回密码</p>
+            <form action="#" class="seek-box">
+                <label for="register-phone">手机号码 <input type="text" id="register-phone" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入11位数字</span></label>
+                <label for="register-code">短信验证 <input type="text" id="register-code" class="info-input" required/><input type="button" value="点击获取" class="code-btn" /><span class="warnning code-warn"><b class="star">*</b>输入4位短信验证码</span></label>  
+                <label for="seek-password">设置密码 <input type="password" id="seek-password" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入6-16位数字或者字母</span></label>
+                <input type="submit" value="提交" class="seek-btn btn" />
+            </form>
+            <div id="footer">
+                 <p class="web-right">&#169 2016 Designed by Kiter</p>
+            </div>
+        </div>
+        <script src="../js/jquery-3.1.0.js"></script>
+        <script src="../js/seek.js"></script>
+    </body>
+</html>

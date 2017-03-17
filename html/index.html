@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/index.css" />
+    </head>
+    <body>
+
+        <div id="header">
+            <img src="../images/login-bg.jpg "class="head-photo" />
+            <span class="web-name">李刚</span>
+            <a class="user-exit" href="#">&nbsp退出&nbsp</a>
+        </div>
+
+        <div id="container">
+
+            <ul class="click-box">
+                <li id="help-click" class="click currunt left">求助中心</li>
+                <li id="info-click" class="click">用户设置</li>
+            </ul>
+
+            <div id="help-box">
+
+                <ul class="allchoice">
+                    <li class="now currunt choice">立即求助</li>
+                    <li class="my choice">我的求助</li>
+                    <li class="others choice">他人求助</li>
+                </ul>
+
+                <div class="content">
+
+                    <div class="help-now a-bank">
+
+                        <div id="map">
+                        </div>
+                        <div class="help-btn">
+                            <input type="image" class="help-button" src="../images/MAIN-BUTTON_normal.png" />
+                        </div>
+                    </div>
+
+                    <div class="help-my task-list a-bank">                       
+                    <ul >
+                        <p class="help-title"><i class="bor"></i>&nbsp我的求助记录</p>
+                        <li class="task-title">
+                            <span class="task-a a">时间</span>
+                            <span class="b task-a">地点</span>
+                            <span class="c task-a">参与人数</span>
+                            <span class="d task-a">积分报酬</span>
+                        </li>
+<!--                         <li class="task"><i class="bor"></i>
+    <span class="task-time task-b">2012-10-1 10:30</span>
+    <span class="task-address task-b">广东工业大学生活西区</span>
+    <span class="task-people task-b">2/3</span>
+    <span class="task-money task-b">40</span>
+    <input type="button" class="task-delete" value="删除记录" />
+</li> -->
+                    </ul>
+                    </div>
+                    
+                    <div class="help-others task-list a-bank">
+                    <ul>
+                        <p class="help-title"><i class="bor"></i>&nbsp帮助他人的记录</p>                     
+                        <li class="task-title">
+                            <span class="task-a a">时间</span>
+                            <span class="b task-a">地点</span>
+                            <span class="c task-a">参与人数</span>
+                            <span class="d task-a">积分报酬</span>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="info-box">
+
+                <ul class="allchoice">
+                    <li class="info-self choice currunt">修改资料</li>
+                    <li class="info-friend choice">亲友名单</li>
+                    <li class="info-money choice">积分充兑</li>
+                </ul>
+
+                <div class="content">
+
+                    <div class="self a-bank">
+                        <p class="info-title help-title"><i class="bor"></i>&nbsp修改头像</p>
+                            <div class="info-photo">
+                            <form action="#" method="post" id="photoPost" enctype="multipart/form-data">
+                                <img src="../images/login-bg.jpg" id="change-photo" alt="加载失败" />
+                                <div class="change-btn">
+                                    <input type="file" class="change-file" id="change-file1" />
+                                    <span class="change-cover">更换头像</span>
+                                </div>
+                                <input type="submit" class="change-submit" value="提交" />
+                            </form>
+                            </div>
+                        <p class="info-title help-title"><i class="bor"></i>&nbsp修改手机</p>
+                            <label for="old-phone">旧手机 &nbsp<input type="text" id="old-phone" class="info-input phone-1" required/>&nbsp&nbsp&nbsp
+                            新手机 &nbsp<input type="text" id="new-phone" class="info-input phone-1" required/><span class="warnning" ><b class="star">*</b>请输入11位数字</span></label>
+                            <label for="info-code">本密码 &nbsp<input type="password" id="code-password" class="info-input" required/> &nbsp&nbsp&nbsp验证码 &nbsp<input type="text" id="info-code" class="info-input" required/><input type="button" value="点击获取" class="code-btn" /><span class="warnning code-warn"><b class="star">*</b>输入短信验证码</span></label>
+                            <input type="submit" value="提交" class="info-btn btn phone-btn" />
+                        <p class="info-title help-title"><i class="bor"></i>&nbsp修改昵称</p>
+                            <label for="info-name">新名字 &nbsp<input type="text" id="new-name" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入您的名字,长度3-16</span> </label>
+                            <input type="submit" value="提交" class="info-btn btn name-btn" />
+                        <p class="info-title help-title"><i class="bor"></i>&nbsp修改密码</p>
+                            <label for="old-password">旧密码 &nbsp<input type="password" id="old-password" class="info-input" required/>
+                            &nbsp&nbsp&nbsp新密码 &nbsp<input type="password" id="new-password" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入6-16位数字或者字母</span></label>
+                        <input type="submit" value="提交" class="info-btn btn password-btn" />
+                    </div>
+
+                    <div class="friend a-bank">
+                        <ul>
+                            <p class="friend-title help-title"><i class="bor"></i>&nbsp亲友列表</p>
+                            <li class="friend-title">
+                                <span class="friend-a friend-name">亲友姓名</span>
+                                <span class="friend-a friend-phone">联系电话</span>
+                            </li>
+                            <button class="edit">提交</button>
+                        </ul>
+                    </div>
+
+                    <div class="money a-bank">
+                        <p class="money-title help-title"><i class="bor"></i>&nbsp积分余额</p>
+                            <label for="money-number">您的积分余额为：<b class="left-money">0</b></label>
+                        <p class="money-title help-title"><i class="bor"></i>&nbsp充值积分</p>
+                            <label for="money-number">充值金额 &nbsp<input type="text" id="money-number" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入充值金额</span></label>
+                            <input type="submit" value="充值" class="charge-btn btn" />
+                        <p class="money-title help-title"><i class="bor"></i>&nbsp提现积分</p>
+                            <label for="money-get">提现金额 &nbsp<input type="text" id="money-get" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入提现金额</span></label>
+                            <input type="submit" value="提现" class="withdraw-btn btn" />
+                    </div>
+        
+                </div>
+
+            </div>
+
+        
+            <div id="footer">
+                <p class="web-right">&#169 2016 Designed by Kiter</p>
+            </div>
+        </div> 
+
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eDGAC3kdBPDagXhvoIIlOgs1DjUnelVd"></script>
+        <script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+
+    </body>
+</html>

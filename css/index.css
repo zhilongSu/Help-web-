@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+#header{
+    width: 100%;
+    background: #1f4665;
+    overflow: hidden; 
+}
+.head-photo{
+    float: left;
+    margin: 0.5% 0 0.5% 7%;
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+    border: 3px solid lightgray;
+    border-radius: 50%;    
+}
+.web-name{
+    float: left;
+    margin: 2% 7% 0.5% 0.5%;
+    font-size: 18px;
+    color: white;
+}
+.user-exit{
+    float: right;
+    margin: 1.7% 7% 0.5% 7%;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+}
+/* container */
+#container{
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/login-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.click{
+    float: left;
+    width: 12%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    font-size: 22px;
+    background: #1f4665;
+    color: white
+}
+#help-click{
+    margin-left: 34%;
+    margin-top: 3%;
+    margin-right: 8%;
+}
+#info-click{
+    margin-top: 3%;
+    margin-right: 5%;   
+}
+
+/********************************************************** help-box **************/
+#help-box{
+    clear: both; 
+    overflow: hidden;
+    /* display: none; */   
+}
+
+/***************************************** help-now *******************************/
+.help-now{
+    /* display: none; */
+}
+#map{
+    width: 98%;
+    height: 680px;
+    margin: 0 auto;
+    border: 10px solid gray;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+.help-tip{
+    position: absolute;
+    bottom: 2%;
+    right: 6%;
+    z-index: 100;
+    color: red;
+    font-size: 18px;
+}
+.help-btn{
+    position: absolute;
+    bottom: 11%;
+    left: 44%;
+}
+.help-button{
+    width: 150px;
+    height: 150px;
+}
+/* **************************************************help-my **************************/
+.help-my{
+    display: none;
+}
+.task-list li::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.help-title{
+    font-size: 22px;
+    margin: 10px 10px 10px 20px;   
+    padding: 10px;
+}
+.bor{
+    height: 10px;
+     width: 1px;
+     border: 2px gray solid;
+}
+.task-a{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 50px;
+    padding-top: 0.2%;
+}
+.a{
+    padding-left: 13%;
+    background: url(../images/Wall-clock.png) top center no-repeat;
+}
+.b{
+    padding-left: 12%;
+    background: url(../images/Location-pointer.png) top center no-repeat;
+}
+.c{
+    padding-left: 13%;
+    background: url(../images/Social-group.png) top center no-repeat;
+}
+.d{
+    padding-left: 16%;
+    background: url(../images/兑现button.png) top center no-repeat;
+}
+.task{
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 2px;
+}
+.task:hover{
+    background: gray;
+}
+.task-b{
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    overflow: hidden;
+}
+.task-delete{
+    width: 60px;
+    height: 28px;
+    border: none;
+    color:white;
+    background: #0ae;
+}
+/*********************************** help-others ******************************/
+/* help-others */
+.help-others{
+    display: none;
+}
+
+/* *********************************公用部分**************************** */
+.allchoice{
+    float: left;
+    margin: 10% 0 0 0;
+    width: 12.5%;
+}
+.choice{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5%;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    font-size: 20px;
+    color: white;
+    background: #1f4665;
+}
+
+/* content */
+.content{
+    height: 680px;
+    width: 75%;
+    float: left;
+    background: lightgray;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+label{
+    display: block;
+    margin-left: 5%;
+    margin-top: 0.5%;
+
+}
+.info-input{
+    width: 240px;
+    height: 32px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+/* btn */
+.btn{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin:0 auto;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    background: #0ae;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+}
+
+/* currunt */
+.currunt{
+    background: orange;
+    color: red;
+}
+.btn-off{
+    background: gray;
+}
+span.warnning{
+    display: inline-block;
+    margin-left: 30px;
+    color: gray;
+    font-size: 14px;
+}
+.star{
+    color: red;
+}
+.code-btn{
+    height: 32px;
+    width: 100px;
+    margin-left: 18px;
+    color: white;
+    font-size: 18px;
+     border: 1px solid #0ae;
+     background: #0ae;
+    border-radius: 6px;
+}
+
+/********************************** info-box ****************************************/
+#info-box{
+    clear: both; 
+    display: none;
+}
+#info-box .content{
+    margin-bottom: 2%;
+    height: 680px;
+}
+/* **************************self****************************************************
+***** */
+.self{
+    /* display: none; */
+}
+.info-photo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 7%;
+}
+.change-btn{
+    height: 32px;
+    width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+input[type=file]{
+    height: 42px;
+    width: 200px;
+    position: relative;
+    z-index: 100;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.change-cover{
+    height: 32px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: underline;
+}
+.change-submit{
+        width: 80px;
+        height: 32px;
+        background: #0ae;
+        border: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 6px;
+}
+/* **********************************money****************************************** */
+.money{
+    display: none;
+}
+.money label{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 1.5%;
+}
+.money .btn{
+    display: block;
+        width: 70px;
+        height: 30px;
+        margin: 10px 0 10px 15%;
+        background: #0ae;
+        border: none;
+        font-size: 18px;
+        color: white;
+        border-radius: 6px;    
+}
+.money .info-input{
+    width: 120px;
+}
+/* *********************************friend *******************************************/
+.friend{
+    display: none;
+}
+.friend li{
+    overflow: hidden;
+}
+.friend-a{
+    display: block;
+    float: left;
+    width: 10%;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 24%;
+    color: red;
+    font-size: 22px;
+}
+.friend .edit{
+    float: right;
+    margin-right: 12%;
+    width: 50px;
+    height: 30px;
+    background: #0ae;
+    border: none;
+    color: white;    
+}
+
+/*********************************** footer *************************************/
+#footer{
+   width: 100%;
+   margin-top: 2%;
+   clear: both;
+}
+.web-right{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}

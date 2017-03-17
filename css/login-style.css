@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../images/login-bg.jpg) no-repeat top center;
+    background-size: cover;
+    font-size: 16px;
+    font-family: "Microsoft Yahei",sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* header */
+#header{
+    width: 100%;
+    height: 52px;
+    background: #0ae;
+    overflow: hidden;   
+}
+.web-name{
+    float: left;
+    margin-top: 4px;
+    margin-left: 60px;
+    font-size:  32px;
+    color: white;
+}
+.user-register{
+    float: right;
+    margin-top: 10px;
+    margin-right: 60px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+/* content */
+#content{
+    width: 100%;
+    overflow: hidden;
+}
+#login-box{
+    float: right;
+    margin-right: 17%;
+    margin-top: 110px;
+    width: 28%;
+    color: white;
+
+}
+ /* login-title */
+.login-title{
+    margin-bottom: 3px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.login-title p{
+    height: 55px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+}
+/* login-main */
+.login-main{
+    padding: 12px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
+/*info-input*/
+.info-input{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 40px;
+    margin-top: 22px;
+    font-size: 18px;
+}
+/* i-code */
+.i-code{
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+    height: 40px;
+    margin-top: 22px;
+    margin-left: 42px;
+    font-size: 16px;
+    clear: both;
+}
+/* i-image */
+.i-image{
+    height: 42px;
+    width: 97px;
+    float: right;
+    margin: -43px 42px 0 20px;
+}
+/* i-change */
+.i-change{
+    float: right;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    margin-right: 41px;
+}
+/*btn*/
+.btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    width: 75%;
+    height: 40px;
+    background: #0ae;
+    border: none;
+    font-size: 18px;
+    color: white;            
+}
+#user-remember{
+    position: relative;
+    top: 2px;
+    margin-left: 68px;
+    margin-bottom: 10px;
+}
+.user-forget{
+    display: inline-block;
+    padding-left: 55px;
+    margin-bottom: 10px; 
+}
+/* footer */
+#footer{
+   width: 100%;
+   margin-top: 53px;
+}
+.web-right{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* warnning */
+.warnning{
+    display: none;
+    color: red;
+    font-size: 14px;
+    float: left;
+    margin-left: 33%;
+}
+/* btn-off */
+.btn-off{
+    background: gray;
+}
+

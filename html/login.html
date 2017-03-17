@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/login-style.css" />
+    </head>
+    <body>
+        <div id="header">
+            <span class="web-name">Help!</span>
+            <a class="user-register" href="register.html">&nbsp注册&nbsp</a>
+        </div>
+        <div id="content">
+            <div id="login-box">
+                <div class="login-title"><p>账密登陆</p></div>
+                <form action="" class="login-main">
+                    <input type="text" class="user-id info-input" placeholder=" 手机号" required /><span class="warnning">格式错误</span>
+                    <input type="password" class="user-password info-input" placeholder="6- 16位密码" required /><span class="warnning">格式错误</span>
+                    <input type="text" class="i-code" placeholder=" 验证码"/ required><img src="#" alt="加载失败" class="i-image" />
+                    <a href="#" class="i-change">看不清，换一张</a><span class="warnning code-warn">验证码错误</span>
+                    <input type="submit" value="登陆" class="login-btn btn" />
+                    <input type="checkbox" id="user-remember" /><label for="user-remember" class="remember">自动登录</label>
+                    <a href="seek.html" class="user-forget">忘记密码？</a>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+             <p class="web-right">&#169 2016 Designed by Kiter</p>
+        </div>
+        <script src="../js/jquery-3.1.0.js"></script>
+        <script src="../js/login.js"></script>
+        <script></script>
+    </body>
+</html>

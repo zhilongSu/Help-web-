@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/register-style.css" />
+    </head>
+    <body>
+        <div id="header">
+            <span class="web-name">Help!</span>
+            <a class="user-login" href="login.html">&nbsp登陆&nbsp</a>
+        </div>
+        <div id="content">
+            <p class="register-title"><i class="bor"></i>&nbspHelp!账号注册</p>
+            <form action="#" class="register-box">
+                <label for="register-phone">手机号码<input type="text" id="register-phone" class="info-input" required/><span class="warnning" ><b class="star">*</b>请输入11位数字</span></label>
+                <label for="register-name">设置名字<input type="text" id="register-name" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入您的昵称（数字字母汉字）,长度在6-16之间</span> </label>
+                <label for="register-password">设置密码<input type="password" id="register-password" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入6-16位数字或者字母</span></label>
+                <label for="register-id">身份证号<input type="text" id="register-id" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入您的正确身份证号码，以备求助</span></label>
+<!--                 <label for="register-question">密保问题
+<select name="question" id="register-question" class="info-input">
+    <option value="1" selected>我的生日是？</option>
+    <option value="2">我父亲的名字是？</option>
+    <option value="3">我母亲的电话是？</option>
+</select><span class="warnning"><b class="star">*</b>请选择一个密保问题</span></label>
+<label for="register-answer">密保答案<input type="text" id="register-answer" class="info-input" required/><span class="warnning"><b class="star">*</b>请输入密保答案</span></label> -->
+                <label for="register-code">验证码<input type="text" id="register-code" class="info-input" required/><input type="button" value="点击获取" class="code-btn" /><span class="warnning code-warn"><b class="star">*</b>输入短信验证码</span></label>
+                <input type="submit" value="注册" class="register-btn btn" />
+            </form>
+            <div id="footer">
+                 <p class="web-right">&#169 2016 Designed by Kiter</p>
+            </div>
+        </div>
+        <script src="../js/jquery-3.1.0.js"></script>
+        <script src="../js/register.js"></script>
+    </body>
+</html>
